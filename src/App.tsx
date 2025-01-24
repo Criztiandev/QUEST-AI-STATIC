@@ -6,6 +6,9 @@ import FeatureSection from "./components/template/landing-page/sections/feature-
 import VideoSection from "./components/template/landing-page/sections/video-section";
 import TokenomicsSection from "./components/template/landing-page/sections/tokenomics-section";
 import RoadMapSection from "./components/template/landing-page/sections/roadmap-section";
+import FaqSection from "./components/template/landing-page/sections/faq-section";
+import BannerSection from "./components/template/landing-page/sections/banner-section";
+import Footer from "./components/template/layout/footer";
 
 const App = () => {
   return (
@@ -21,7 +24,10 @@ const App = () => {
         <VideoSection />
         <TokenomicsSection />
         <RoadMapSection />
+        <FaqSection />
+        <BannerSection />
       </main>
+      <Footer />
     </div>
   );
 };
