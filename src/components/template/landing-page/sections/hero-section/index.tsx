@@ -1,13 +1,14 @@
 import HeroBadge from "@/components/atoms/badge/hero-badge";
 import PrimaryButton from "@/components/atoms/button/primary-button";
+import Section from "@/components/template/layout/section";
 
 const HeroSection = () => {
   return (
-    <section className=" min-h-[90vh] ">
-      <div className="  flex justify-center items-center flex-col space-y-[100px] px-16 pt-[120px]">
+    <Section className="min-h-[90vh] pt-[150px]">
+      <div className="  flex justify-center items-center flex-col space-y-[100px]">
         {/* Banner */}
         <div className="flex flex-col gap-[48px] items-center justify-between">
-          <HeroBadge />
+          <HeroBadge>New QuestX bot for your X community</HeroBadge>
 
           <div className="flex flex-col gap-8 max-w-[824px] justify-center items-center">
             <h1 className="text-6xl font-bold text-center">
@@ -34,7 +35,7 @@ const HeroSection = () => {
           ></iframe>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

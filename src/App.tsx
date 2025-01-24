@@ -4,6 +4,7 @@ import AboutSection from "./components/template/landing-page/sections/about-sect
 import SponsorSection from "./components/template/landing-page/sections/sponsor-section";
 import FeatureSection from "./components/template/landing-page/sections/feature-section";
 import VideoSection from "./components/template/landing-page/sections/video-section";
+import TokenomicsSection from "./components/template/landing-page/sections/tokenomics-section";
 
 const App = () => {
   return (
@@ -11,12 +12,13 @@ const App = () => {
       <header className="">
         <Navbar />
       </header>
-      <main className="">
+      <main className="space-y-[120px]">
         <HeroSection />
         <AboutSection />
         <SponsorSection />
         <FeatureSection />
         <VideoSection />
+        <TokenomicsSection />
       </main>
     </div>
   );

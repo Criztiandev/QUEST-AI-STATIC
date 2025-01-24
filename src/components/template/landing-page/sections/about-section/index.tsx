@@ -1,11 +1,12 @@
 import PrimaryButton from "@/components/atoms/button/primary-button";
+import Section from "@/components/template/layout/section";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Plane } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="p-16 pt-[100px]">
+    <Section>
       <div className="grid grid-cols-[55%_auto] gap-16 ">
         <div className="flex flex-col gap-12 items-start">
           <Badge>QuestAI</Badge>
@@ -85,7 +86,7 @@ const AboutSection = () => {
           </Card>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
