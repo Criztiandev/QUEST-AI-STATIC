@@ -5,6 +5,7 @@ import SponsorSection from "./components/template/landing-page/sections/sponsor-
 import FeatureSection from "./components/template/landing-page/sections/feature-section";
 import VideoSection from "./components/template/landing-page/sections/video-section";
 import TokenomicsSection from "./components/template/landing-page/sections/tokenomics-section";
+import RoadMapSection from "./components/template/landing-page/sections/roadmap-section";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <FeatureSection />
         <VideoSection />
         <TokenomicsSection />
+        <RoadMapSection />
       </main>
     </div>
   );
