@@ -1,4 +1,3 @@
-import Navbar from "./components/template/layout/nav-bar";
 import HeroSection from "./components/template/landing-page/sections/hero-section";
 import AboutSection from "./components/template/landing-page/sections/about-section";
 import SponsorSection from "./components/template/landing-page/sections/sponsor-section";
@@ -9,25 +8,24 @@ import RoadMapSection from "./components/template/landing-page/sections/roadmap-
 import FaqSection from "./components/template/landing-page/sections/faq-section";
 import BannerSection from "./components/template/landing-page/sections/banner-section";
 import Footer from "./components/template/layout/footer";
+import Header from "./components/template/layout/header";
 
 const App = () => {
   return (
     <div className="min-h-screen">
-      <header className="">
-        <Navbar />
-      </header>
+      <Header />
       <main className="space-y-[120px]">
         <HeroSection />
-        <AboutSection />
+        {/* <AboutSection />
         <SponsorSection />
         <FeatureSection />
         <VideoSection />
         <TokenomicsSection />
         <RoadMapSection />
         <FaqSection />
-        <BannerSection />
+        <BannerSection /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

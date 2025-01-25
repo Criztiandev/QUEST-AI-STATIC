@@ -2,7 +2,7 @@ import Logo from "@/components/atoms/other/logo";
 
 const Footer = () => {
   return (
-    <footer className="px-32 my-16">
+    <footer className="px-32 my-16 border">
       <div className="w-full flex justify-between items-center">
         <div>
           <Logo />
@@ -18,15 +18,6 @@ const Footer = () => {
               <li>Features</li>
               <li>Roadmap</li>
               <li>Whitepaper</li>
-            </ul>
-          </div>
-
-          <div>
-            <span>Support</span>
-            <ul>
-              <li>Email</li>
-              <li>Telegram</li>
-              <li>X</li>
             </ul>
           </div>
         </div>

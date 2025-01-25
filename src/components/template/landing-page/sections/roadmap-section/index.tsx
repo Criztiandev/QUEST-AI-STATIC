@@ -16,7 +16,7 @@ const RoadMapSection = () => {
             id: "q1",
             title: "Q1",
             content: (
-              <Card className="min-w-[500px]">
+              <Card className="xl:xl:min-w-[500px]">
                 <CardContent className="space-y-2 flex flex-col p-4">
                   <span>Bot Development started</span>
                   <span>Social media setup</span>
@@ -39,7 +39,7 @@ const RoadMapSection = () => {
             id: "q2",
             title: "Q2",
             content: (
-              <Card className="min-w-[500px]">
+              <Card className="xl:min-w-[500px]">
                 <CardContent className="space-y-2 flex flex-col p-4">
                   <span>Bot Development v2 </span>
                   <span>QuestX Development started </span>
@@ -61,7 +61,7 @@ const RoadMapSection = () => {
             id: "q3",
             title: "Q3",
             content: (
-              <Card className="min-w-[500px]">
+              <Card className="xl:min-w-[500px]">
                 <CardContent className="space-y-2 flex flex-col p-4">
                   <span>New algorithms added </span>
                   <span>Launch of QuestX</span>
@@ -82,7 +82,7 @@ const RoadMapSection = () => {
             id: "q4",
             title: "Q5",
             content: (
-              <Card className="min-w-[500px]">
+              <Card className="xl:min-w-[500px]">
                 <CardContent className="space-y-2 flex flex-col p-4">
                   <span>Bot Development v3 </span>
                   <span>Multilingual support launch</span>
