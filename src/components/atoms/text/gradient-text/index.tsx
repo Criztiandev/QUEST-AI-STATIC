@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
-  text: string;
+  readonly text: string;
 }
 
-export function GradientText({ text, ...props }: Props) {
+export const GradientText: React.FC<Props> = ({ text, ...props }) => {
   const colors = ["rgb(131, 179, 32)", "rgb(249, 129, 47)"];
   const [count, setCount] = React.useState(0);
 
@@ -43,6 +43,6 @@ export function GradientText({ text, ...props }: Props) {
       </span>
     </motion.div>
   );
-}
+};
 
 export default GradientText;

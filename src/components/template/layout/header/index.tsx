@@ -1,5 +1,3 @@
-import PrimaryButton from "@/components/atoms/button/primary-button";
-import { Button } from "@/components/ui/button";
 import { useMenuBar } from "@/context/layout/menu-bar-context";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { MenuIcon } from "lucide-react";

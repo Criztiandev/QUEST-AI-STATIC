@@ -1,19 +1,20 @@
 import PrimaryButton from "@/components/atoms/button/primary-button";
 import Section from "@/components/template/layout/section";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Plane } from "lucide-react";
-
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AboutData, AboutDataProps } from "./data";
+import FadeCard from "@/components/atoms/card/fade-card";
 const AboutSection = () => {
   return (
     <Section>
-      <div className="grid grid-cols-[55%_auto] gap-16 ">
-        <div className="flex flex-col gap-12 items-start">
+      {/* grid-cols-[55%_auto] */}
+      <div className="grid grid-cols-1 gap-16 ">
+        <div className="flex flex-col gap-8 items-start">
           <Badge>QuestAI</Badge>
 
           <div className="flex flex-col gap-6 ">
-            <h2 className="text-5xl font-bold">QuestBot</h2>
-            <p className="text-xl max-w-[800px]">
+            <h2 className="text-6xl font-bold">QuestBot</h2>
+            <p className="text-lg text-muted-foreground">
               A powerful Telegram bot designed to make running quizzes and
               giveaways in your community effortless. With just a few clicks,
               you can set up an automated giveaway, eliminating the need for
@@ -24,66 +25,20 @@ const AboutSection = () => {
 
           <PrimaryButton>Get Started</PrimaryButton>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          <Card className="px-2">
-            <CardHeader className="pt-[48px] pb-4">
-              <Plane size={32} className="mb-4" />
-              <CardTitle className="text-2xl font-semibold ">
-                Telegram Bot API Integration
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="">
-              <p className="text-lg">
-                QuestAI uses the Telegram Bot API to interact with groups and
-                channels.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="px-2">
-            <CardHeader className="pt-[48px] pb-4">
-              <Plane size={32} className="mb-4" />
-              <CardTitle className="text-2xl font-semibold ">
-                Customization
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="">
-              <p className="text-lg">
-                Customize question difficulty to suit different audiences and
-                quiz formats. 
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="px-2">
-            <CardHeader className="pt-[48px] pb-4">
-              <Plane size={32} className="mb-4" />
-              <CardTitle className="text-2xl font-semibold ">
-                Real-Time Answer Detection and Winner Tracking
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="">
-              <p className="text-lg">
-                QuestAI’s bot is powered by chat parsing and answer matching
-                algorithms. 
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="px-2">
-            <CardHeader className="pt-[48px] pb-4">
-              <Plane size={32} className="mb-4" />
-              <CardTitle className="text-2xl font-semibold ">
-                Bot Interface and Command Structure
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="">
-              <p className="text-lg">
-                QuestAI features a simple and intuitive interface for easy
-                interaction.   
-              </p>
-            </CardContent>
-          </Card>
+        <div className="grid grid-cols-1 gap-4">
+          {AboutData.map((items: AboutDataProps) => (
+            <FadeCard key={items.id}>
+              <CardHeader>
+                {items.icon}
+                <CardTitle className="text-2xl font-semibold ">
+                  {items.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="">
+                <p className="text-lg">{items.description}</p>
+              </CardContent>
+            </FadeCard>
+          ))}
         </div>
       </div>
     </Section>

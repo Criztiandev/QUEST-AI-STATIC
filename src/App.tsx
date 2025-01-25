@@ -14,11 +14,13 @@ const App = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="space-y-[120px]">
+      <main className="space-y-[100px]">
         <HeroSection />
-        {/* <AboutSection />
+        <AboutSection />
         <SponsorSection />
         <FeatureSection />
+
+        {/* 
         <VideoSection />
         <TokenomicsSection />
         <RoadMapSection />

@@ -10,7 +10,7 @@ const PrimaryButton = ({ children, ...props }: Props) => {
     <Button
       {...props}
       size="lg"
-      className={cn("rounded-full px-6 py-6", props.className)}
+      className={cn("rounded-full px-6 py-6 text-lg", props.className)}
     >
       {children}
     </Button>

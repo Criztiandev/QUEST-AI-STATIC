@@ -1,43 +1,27 @@
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import PrimaryCard from "@/components/atoms/card/primary-card";
+import Section from "@/components/template/layout/section";
+import { SponsorData } from "./data";
 
 const SponsorSection = () => {
   return (
-    <section className="flex gap-4 items-center px-16 py-[50px]">
-      <div className="w-[400px]">
-        <h3 className="text-xl">Your trusted partner for community growth</h3>
+    <Section className="flex justify-center items-center flex-col gap-4">
+      <div className="flex flex-col gap-4 justify-center items-center mb-8">
+        <h3 className="text-xl text-muted-foreground text-center">
+          Your trusted partner for community growth
+        </h3>
       </div>
-      <div className="flex flex-row gap-6 overflow-x-scroll scrollbar-hide">
-        <Card className="w-[300px]">
-          <CardHeader>
-            <CardTitle>Partner 1</CardTitle>
-          </CardHeader>
-        </Card>
-
-        <Card className="w-[300px]">
-          <CardHeader>
-            <CardTitle>Partner 1</CardTitle>
-          </CardHeader>
-        </Card>
-
-        <Card className="w-[300px]">
-          <CardHeader>
-            <CardTitle>Partner 1</CardTitle>
-          </CardHeader>
-        </Card>
-
-        <Card className="w-[300px]">
-          <CardHeader>
-            <CardTitle>Partner 1</CardTitle>
-          </CardHeader>
-        </Card>
-
-        <Card className="w-[300px]">
-          <CardHeader>
-            <CardTitle>Partner 1</CardTitle>
-          </CardHeader>
-        </Card>
+      <div className="flex flex-wrap gap-4 justify-center items-center">
+        {SponsorData.map((sponsor) => (
+          <PrimaryCard key={sponsor.id} className="w-full">
+            <img
+              src={sponsor.image}
+              alt="sponsor"
+              className="w-full h-full object-cover"
+            />
+          </PrimaryCard>
+        ))}
       </div>
-    </section>
+    </Section>
   );
 };
 
