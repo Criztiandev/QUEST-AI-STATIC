@@ -19,15 +19,13 @@ const App = () => {
         <AboutSection />
         <SponsorSection />
         <FeatureSection />
-
-        {/* 
         <VideoSection />
         <TokenomicsSection />
         <RoadMapSection />
         <FaqSection />
-        <BannerSection /> */}
+        <BannerSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

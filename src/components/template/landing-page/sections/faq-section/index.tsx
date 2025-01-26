@@ -115,9 +115,9 @@ const FAQData = [
 
 const FaqSection = () => {
   return (
-    <Section>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
+    <Section className="">
+      <div className="grid grid-cols-1 gap-4">
+        <div className="mb-8">
           <HeroBadge className="mb-8">FAQs</HeroBadge>
           <h3 className="text-5xl font-bold max-w-2xl">
             Need to know more about QuestAI?
@@ -132,7 +132,9 @@ const FaqSection = () => {
                 </AccordionTrigger>
                 <AccordionContent>
                   <Separator className="mb-4" />
-                  <p className="text-base">{item.content}</p>
+                  <p className="text-base text-muted-foreground">
+                    {item.content}
+                  </p>
                 </AccordionContent>
               </AccordionItem>
             ))}

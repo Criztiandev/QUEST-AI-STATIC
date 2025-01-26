@@ -130,8 +130,8 @@ const PieDonutChart: React.FC = () => {
             data={data}
             cx="50%"
             cy="50%"
-            innerRadius={100}
-            outerRadius={200}
+            innerRadius={84}
+            outerRadius={160}
             dataKey="value"
             onMouseEnter={onPieEnter}
             labelLine={false}

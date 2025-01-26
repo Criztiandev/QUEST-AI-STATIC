@@ -11,11 +11,13 @@ const HeroSection = () => {
       {/* Banner */}
       <div className="flex flex-col gap-[48px] items-center justify-between mb-10">
         <HeroBadge className="text-primary bg-primary-foreground space-x-4">
-          <Badge className="rounded-full font-bold text-lg">New</Badge>
-          <span className="text-center text-base">
+          <Badge className="rounded-full font-bold text-xs px-4 py-2">
+            New
+          </Badge>
+          <span className="text-center text-sm">
             New QuestX bot for your X community
           </span>
-          <ArrowRight size={32} />
+          <ArrowRight size={24} />
         </HeroBadge>
 
         <div className="flex flex-col gap-8  justify-center items-center">

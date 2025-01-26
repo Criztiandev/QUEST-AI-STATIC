@@ -1,22 +1,31 @@
+import PrimaryButton from "@/components/atoms/button/primary-button";
 import Section from "@/components/template/layout/section";
-import { Button } from "@/components/ui/button";
 
 const BannerSection = () => {
   return (
     <Section>
-      <div className="w-full flex justify-around items-center border p-4 rounded-xl">
-        <div className="w-[500px] h-[400px] border">LOGO</div>
+      <div className="flex justify-center items-center gap-10 flex-col bg-secondary rounded-xl pb-8">
+        <div className="">
+          <img
+            src="/images/logo/quest-ai-plain-logo.svg"
+            alt="banner"
+            className="w-[300px] h-[300px] object-"
+          />
+        </div>
 
-        <div className="space-y-4 max-w-[600px]">
+        <div className="space-y-8 flex justify-center items-center flex-col text-center">
           <h3 className="text-5xl font-bold flex flex-col gap-2">
-            <span className="text-primary">Your Giveaway,</span>{" "}
-            <span className="text-primary">Our Questions</span>
+            <span className="text-white">Your Giveaway,</span>
+            <span className="text-white">Our Questions</span>
           </h3>
           <p className="text-xl">
             Try out QuestAI Telegram bot now for your community and experience
             the ease of hosting giveaways!
           </p>
-          <Button className="mt-4">Get Started</Button>
+
+          <PrimaryButton className="bg-white hover:bg-primary">
+            Get Started
+          </PrimaryButton>
         </div>
       </div>
     </Section>

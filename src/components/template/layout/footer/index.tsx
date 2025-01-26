@@ -1,23 +1,34 @@
-import Logo from "@/components/atoms/other/logo";
+import PrimaryLongLogoWhite from "@/components/atoms/logo/primary-long-logo-white";
 
 const Footer = () => {
   return (
-    <footer className="px-32 my-16 border">
-      <div className="w-full flex justify-between items-center">
-        <div>
-          <Logo />
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+    <footer className="px-6 mb-16">
+      <div className="flex flex-col ">
+        <div className="flex flex-col items-center mt-24 mb-16">
+          <PrimaryLongLogoWhite />
+          <p className="text-muted-foreground text-center max-w-[300px]">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit.
+          </p>
         </div>
 
-        <div className="flex gap-16">
-          <div>
-            <span>About</span>
-            <ul>
+        <div className="grid grid-cols-2 gap justify-items-center">
+          <div className="flex flex-col space-y-2">
+            <span className="text-lg font-bold">About</span>
+            <ul className="text-muted-foreground">
               <li>Features</li>
               <li>Tokenomics</li>
               <li>Features</li>
               <li>Roadmap</li>
               <li>Whitepaper</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col space-y-2">
+            <span className="text-lg font-bold">Support</span>
+            <ul className="text-muted-foreground">
+              <li>Email</li>
+              <li>Telegram</li>
+              <li>X</li>
             </ul>
           </div>
         </div>

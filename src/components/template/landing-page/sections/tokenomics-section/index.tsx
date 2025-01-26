@@ -1,4 +1,5 @@
 import HeroBadge from "@/components/atoms/badge/hero-badge";
+import GradientText from "@/components/atoms/text/gradient-text";
 import PieDonutChart from "@/components/molecules/chart/pie-donut-chart";
 import Section from "@/components/template/layout/section";
 import { Separator } from "@/components/ui/separator";
@@ -6,14 +7,14 @@ import { Separator } from "@/components/ui/separator";
 const TokenomicsSection = () => {
   return (
     <Section className="flex justify-center items-center flex-col">
-      <HeroBadge className="mb-8">Tokenomics</HeroBadge>
+      <HeroBadge className="">Tokenomics</HeroBadge>
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">
-        <div className="space-x-2 flex items-center">
+        <div className="flex flex-col items-center justify-center p-4 gap-2">
           <h3 className="text-5xl font-bold">Total Supply:</h3>
-          <span className="text-5xl font-bold">10,000,000</span>
+          <GradientText text="10,000,000" className="text-5xl font-bold" />
         </div>
-        <p className="text-xl max-w-2xl text-center">
+        <p className="text-xl max-w-2xl text-center text-muted-foreground">
           QuestAI's tokenomics structure is strategically allocated to drive
           growth, stability, and long-term success.
         </p>
@@ -21,31 +22,31 @@ const TokenomicsSection = () => {
 
       <PieDonutChart />
 
-      <div className="flex gap-4 items-center mt-12">
+      <div className="flex flex-col gap-4 items-center">
         <span className="space-x-2">
-          <span className="text-2xl font-semibold">4/4</span>
-          <span className="text-2xl font-semibold">Tax</span>
+          <GradientText text="4/4" className="text-3xl font-semibold" />
+          <span className="text-3xl font-semibold">Tax</span>
         </span>
 
         <Separator className="h-8" orientation="vertical" />
 
         <span className="space-x-2">
-          <span className="text-2xl font-semibold">2%</span>
-          <span className="text-2xl font-semibold">Marketing</span>
+          <GradientText text="2%" className="text-3xl font-semibold" />
+          <span className="text-3xl font-semibold">Marketing</span>
         </span>
 
         <Separator className="h-8" orientation="vertical" />
 
         <span className="space-x-2">
-          <span className="text-2xl font-semibold">1%</span>
-          <span className="text-2xl font-semibold">Development</span>
+          <GradientText text="1%" className="text-3xl font-semibold" />
+          <span className="text-3xl font-semibold">Development</span>
         </span>
 
         <Separator className="h-8" orientation="vertical" />
 
         <span className="space-x-2">
-          <span className="text-2xl font-semibold">1%</span>
-          <span className="text-2xl font-semibold">Team</span>
+          <GradientText text="1%" className="text-3xl font-semibold" />
+          <span className="text-3xl font-semibold">Team</span>
         </span>
       </div>
     </Section>

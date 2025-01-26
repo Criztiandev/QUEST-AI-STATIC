@@ -6,7 +6,7 @@ const InstantWinnerNotificationCard = () => {
     <FeatureCard className="p-0 relative h-[350px]  ">
       <div className="w-full h-full relative">
         <img
-          src="/images/background/feauter-automated.png"
+          src="/images/background/feature-bg-1.svg"
           alt="feature-1"
           height={500}
           className="w-full h-full object-contain"
