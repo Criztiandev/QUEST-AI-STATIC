@@ -115,7 +115,7 @@ const FAQData = [
 
 const FaqSection = () => {
   return (
-    <Section className="">
+    <Section className="" id="faq">
       <div className="grid grid-cols-1 gap-4">
         <div className="mb-8">
           <div className="mb-8">

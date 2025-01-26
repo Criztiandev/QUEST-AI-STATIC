@@ -6,7 +6,10 @@ import { Separator } from "@/components/ui/separator";
 
 const TokenomicsSection = () => {
   return (
-    <Section className="flex justify-center items-center flex-col">
+    <Section
+      className="flex justify-center items-center flex-col overflow-hidden"
+      id="tokenomics"
+    >
       <HeroBadge className="">Tokenomics</HeroBadge>
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">

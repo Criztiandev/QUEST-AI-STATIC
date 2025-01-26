@@ -1,4 +1,5 @@
 import PrimaryLongLogoWhite from "@/components/atoms/logo/primary-long-logo-white";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -16,16 +17,16 @@ const Footer = () => {
             <span className="text-lg font-bold">About</span>
             <ul className="text-muted-foreground">
               <li>
-                <a href="#home">Features</a>
+                <a href="#feature">Features</a>
               </li>
               <li>
-                <a href="/">Tokenomics</a>
+                <a href="#tokenomics">Tokenomics</a>
               </li>
               <li>
-                <a href="/">Roadmap</a>
+                <a href="#roadmap">Roadmap</a>
               </li>
               <li>
-                <a href="/">Whitepaper</a>
+                <a href="#whitepaper">Whitepaper</a>
               </li>
             </ul>
           </div>
@@ -33,9 +34,15 @@ const Footer = () => {
           <div className="flex flex-col space-y-2">
             <span className="text-lg font-bold">Support</span>
             <ul className="text-muted-foreground">
-              <li>Email</li>
-              <li>Telegram</li>
-              <li>X</li>
+              <li>
+                <Link to="">Email</Link>
+              </li>
+              <li>
+                <Link to="/">Telegram</Link>
+              </li>
+              <li>
+                <Link to="/">X</Link>
+              </li>
             </ul>
           </div>
         </div>

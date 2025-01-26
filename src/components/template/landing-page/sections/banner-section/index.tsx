@@ -3,7 +3,7 @@ import Section from "@/components/template/layout/section";
 
 const BannerSection = () => {
   return (
-    <Section>
+    <Section id="support">
       <div className="relative flex justify-center items-center gap-10 flex-col bg-secondary rounded-xl pb-8 overflow-hidden">
         <div className="absolute  -left-[120px]">
           <img

@@ -7,7 +7,7 @@ import { timelineData } from "./roadmap.data";
 
 const RoadMapSection = () => {
   return (
-    <Section className="pb-48">
+    <Section className="" id="roadmap">
       <div className="flex flex-col items-center justify-center space-y-8">
         <HeroBadge>Timeline</HeroBadge>
         <h3 className="text-6xl font-bold text-center">QuestAI Roadmap</h3>

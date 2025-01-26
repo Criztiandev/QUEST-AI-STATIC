@@ -8,7 +8,7 @@ import HeroBadge from "@/components/atoms/badge/hero-badge";
 
 const FeatureSection = () => {
   return (
-    <Section>
+    <Section id="feature">
       <div className="flex flex-col gap-4 justify-center items-center space-y-4 mb-8 md:mb-16">
         <HeroBadge className="px-4 py-2 rounded-full" variant="outline">
           <span className="text-sm">Introducing</span>

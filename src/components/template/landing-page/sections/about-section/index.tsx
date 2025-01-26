@@ -6,8 +6,8 @@ import FadeCard from "@/components/atoms/card/fade-card";
 import HeroBadge from "@/components/atoms/badge/hero-badge";
 const AboutSection = () => {
   return (
-    <Section className="relative pt-[64px]">
-      <div className="absolute inset-0">
+    <Section className="relative pt-[64px]" id="about">
+      <div className="absolute top-0 left-0 -z-99">
         <img
           src="/images/background/hero-beam.png"
           alt="about-bg"
