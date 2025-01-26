@@ -13,7 +13,7 @@ const TokenomicsSection = () => {
       <HeroBadge className="">Tokenomics</HeroBadge>
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">
-        <div className="flex flex-col items-center justify-center p-4 gap-2">
+        <div className="flex flex-col items-center justify-center p-4 gap-2 xl:flex-row">
           <h3 className="text-5xl font-bold">Total Supply:</h3>
           <GradientText text="10,000,000" className="text-5xl font-bold" />
         </div>
@@ -27,7 +27,7 @@ const TokenomicsSection = () => {
         <PieDonutChart />
       </div>
 
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center xl:flex-row">
         <span className="space-x-2">
           <GradientText text="4/4" className="text-3xl font-semibold" />
           <span className="text-3xl font-semibold">Tax</span>

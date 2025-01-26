@@ -1,4 +1,3 @@
-import PrimaryCard from "@/components/atoms/card/primary-card";
 import Section from "@/components/template/layout/section";
 import { SponsorData } from "./data";
 import InfiniteMovingCards from "@/components/atoms/other/infinite-scroll-card";

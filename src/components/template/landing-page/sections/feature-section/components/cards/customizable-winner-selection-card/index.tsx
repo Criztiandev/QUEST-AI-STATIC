@@ -3,18 +3,16 @@ import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const CustomizableWinnerSelectionCard = () => {
   return (
-    <FeatureCard className="p-0 relative">
-      <div className="w-full relative h-[350px]">
-        <div>
+    <FeatureCard className="p-0 relative w-full xl:max-w-[450px] xl:h-full">
+      <div className="flex flex-col justify-between items-center border w-full h-full">
+        <div className="w-full h-full">
           <img
             src="/images/background/feature-customization.png"
             alt="feature-1"
-            height={700}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain "
           />
         </div>
-        <div className="absolute bottom-0 left-0">
-          <div className="w-16 h-16 rounded-full mx-auto mb-12"></div>
+        <div className="">
           <CardHeader className="p-0">
             <CardTitle className="text-xl font-bold px-6 py-2">
               Customizable Winner Selection

@@ -55,7 +55,9 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      toggleMenu();
+      if (isMobile) {
+        toggleMenu();
+      }
     }
   };
 
@@ -112,7 +114,7 @@ const Header = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="overflow-hidden"
+            className="fixed top-[73px] left-0 right-0 bg-background z-50 overflow-hidden"
           >
             <motion.ul
               variants={listVariants}
@@ -138,6 +140,9 @@ const Header = () => {
                   </a>
                 </motion.li>
               ))}
+              <motion.li variants={itemVariants} className="w-full py-2">
+                <SpecialButton className="w-full">Get Started</SpecialButton>
+              </motion.li>
             </motion.ul>
           </motion.div>
         )}

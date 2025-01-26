@@ -28,19 +28,20 @@ const FeatureSection = () => {
       </div>
 
       {/* grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[auto_2fr_auto] gap-4 */}
-      <div className="space-y-4">
+      {/*   */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[auto_2fr_auto] gap-4">
         {/* Left Section */}
-        <div className="flex flex-col gap-4 justify-between items-center">
+        <div className=" sm:grid sm:grid-cols-1 sm:gap-4 md:grid-rows-2 xl:flex xl:flex-col xl:justify-between xl:items-center gap-4">
           <EasyAuthenticationCard />
           <CustomizableWinnerSelectionCard />
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 md:grid-rows-2 gap-4">
           <AutomatedGivewayManagementCard />
           <InstantWinnerNotificationCard />
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
           <TrackParticipationCard />
         </div>
       </div>

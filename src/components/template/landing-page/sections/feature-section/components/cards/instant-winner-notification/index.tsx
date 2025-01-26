@@ -3,17 +3,17 @@ import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const InstantWinnerNotificationCard = () => {
   return (
-    <FeatureCard className="p-0 relative h-[350px]  ">
-      <div className="flex flex-col justify-center items-center">
-        <div className=" h-[250px]">
+    <FeatureCard className="p-0 relative flex flex-col justify-center items-center xl:h-full xl:w-full  ">
+      <div className="flex flex-col justify-center xl:justify-between items-center xl:h-full xl:w-full  ">
+        <div className=" h-[250px] xl:h-[300px]">
           <img
             src="/images/background/feature-instant-notification.svg"
             alt="feature-1"
-            className="w-full object-contain h-full"
+            className="w-full object-cover h-full"
           />
         </div>
 
-        <div className="absolute bottom-0 left-0">
+        <div className="w-full">
           <CardHeader className="p-0">
             <CardTitle className="text-xl font-bold px-6 py-2">
               Instant Winner Notification

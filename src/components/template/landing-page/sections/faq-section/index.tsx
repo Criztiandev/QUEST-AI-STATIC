@@ -116,7 +116,7 @@ const FAQData = [
 const FaqSection = () => {
   return (
     <Section className="" id="faq">
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
         <div className="mb-8">
           <div className="mb-8">
             <HeroBadge>FAQs</HeroBadge>

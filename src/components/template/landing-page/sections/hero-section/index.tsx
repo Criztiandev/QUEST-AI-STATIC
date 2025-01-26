@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <Section className="pt-[100px]">
+    <Section className="pt-[100px] xl:pb-[120px]">
       <div className="absolute inset-0 -z-20">
         <img
           src="/images/background/hero-background.png"
