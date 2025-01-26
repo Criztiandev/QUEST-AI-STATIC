@@ -118,7 +118,9 @@ const FaqSection = () => {
     <Section className="">
       <div className="grid grid-cols-1 gap-4">
         <div className="mb-8">
-          <HeroBadge className="mb-8">FAQs</HeroBadge>
+          <div className="mb-8">
+            <HeroBadge>FAQs</HeroBadge>
+          </div>
           <h3 className="text-5xl font-bold max-w-2xl">
             Need to know more about QuestAI?
           </h3>

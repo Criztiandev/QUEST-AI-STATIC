@@ -1,6 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import HeroBadge from "../../badge/hero-badge";
 
 interface TimelineEntry {
   id: string;
@@ -49,8 +50,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.title}
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500 ">
+                <HeroBadge className="bg-primary-foreground rounded-full px-4 py-1">
+                  {item.title}
+                </HeroBadge>
               </h3>
               {item.content}
             </div>

@@ -4,10 +4,26 @@ import Section from "@/components/template/layout/section";
 const BannerSection = () => {
   return (
     <Section>
-      <div className="flex justify-center items-center gap-10 flex-col bg-secondary rounded-xl pb-8">
+      <div className="relative flex justify-center items-center gap-10 flex-col bg-secondary rounded-xl pb-8 overflow-hidden">
+        <div className="absolute  -left-[120px]">
+          <img
+            src="/images/background/radial-beam.svg"
+            alt="radial"
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        <div className="absolute bottom-0 right-0">
+          <img
+            src="/images/background/radial-beam-right.svg"
+            alt="radial"
+            className="w-full h-full object-contain"
+          />
+        </div>
+
         <div className="">
           <img
-            src="/images/logo/quest-ai-plain-logo.svg"
+            src="/images/logo/quest-ai-solo-blue-logo.svg"
             alt="banner"
             className="w-[300px] h-[300px] object-"
           />

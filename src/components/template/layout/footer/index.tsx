@@ -15,11 +15,18 @@ const Footer = () => {
           <div className="flex flex-col space-y-2">
             <span className="text-lg font-bold">About</span>
             <ul className="text-muted-foreground">
-              <li>Features</li>
-              <li>Tokenomics</li>
-              <li>Features</li>
-              <li>Roadmap</li>
-              <li>Whitepaper</li>
+              <li>
+                <a href="#home">Features</a>
+              </li>
+              <li>
+                <a href="/">Tokenomics</a>
+              </li>
+              <li>
+                <a href="/">Roadmap</a>
+              </li>
+              <li>
+                <a href="/">Whitepaper</a>
+              </li>
             </ul>
           </div>
 

@@ -8,6 +8,13 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <Section className="pt-[100px]">
+      <div className="absolute border inset-0 -z-20">
+        <img
+          src="/images/background/hero-background.png"
+          alt="hero-bg"
+          className="w-full h-full object-cover"
+        />
+      </div>
       {/* Banner */}
       <div className="flex flex-col gap-[48px] items-center justify-between">
         <HeroBadge className="text-primary space-x-4">

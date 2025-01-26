@@ -10,7 +10,7 @@ const RoadMapSection = () => {
     <Section className="pb-48">
       <div className="flex flex-col items-center justify-center space-y-8">
         <HeroBadge>Timeline</HeroBadge>
-        <h3 className="text-5xl font-bold text-center">QuestAI Roadmap</h3>
+        <h3 className="text-6xl font-bold text-center">QuestAI Roadmap</h3>
       </div>
       <Timeline
         data={timelineData.map((quarter) => ({

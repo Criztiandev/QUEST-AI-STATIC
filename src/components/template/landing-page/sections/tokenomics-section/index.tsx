@@ -20,7 +20,9 @@ const TokenomicsSection = () => {
         </p>
       </div>
 
-      <PieDonutChart />
+      <div className="flex justify-center items-center flex-col gap-4 mb-8">
+        <PieDonutChart />
+      </div>
 
       <div className="flex flex-col gap-4 items-center">
         <span className="space-x-2">

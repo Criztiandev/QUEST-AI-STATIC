@@ -6,7 +6,14 @@ import FadeCard from "@/components/atoms/card/fade-card";
 import HeroBadge from "@/components/atoms/badge/hero-badge";
 const AboutSection = () => {
   return (
-    <Section>
+    <Section className="relative pt-[64px]">
+      <div className="absolute inset-0">
+        <img
+          src="/images/background/hero-beam.png"
+          alt="about-bg"
+          className="w-full object-cover"
+        />
+      </div>
       {/* grid-cols-[55%_auto] */}
       <div className="grid grid-cols-1 gap-16 ">
         <div className="flex flex-col gap-8 items-start">

@@ -3,18 +3,20 @@ import { CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const AutomatedGivewayManagementCard = () => {
   return (
-    <FeatureCard className="p-0 relative h-[350px]  ">
-      <div className="w-full h-full relative">
-        <img
-          src="/images/background/feauter-automated.png"
-          alt="feature-1"
-          height={500}
-          className="w-full h-full object-contain"
-        />
-        <div className="absolute bottom-0 left-0">
+    <FeatureCard className="p-0 relative  ">
+      <div className="flex flex-col justify-center items-center">
+        <div className="">
+          <img
+            src="/images/background/feature-automated-giveaway.svg"
+            alt="feature-1"
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        <div className="">
           <CardHeader className="p-0">
             <CardTitle className="text-xl font-bold px-6 py-2">
-              Easy Authentication
+              Automated Giveaway Management
             </CardTitle>
           </CardHeader>
           <CardContent className="text-muted-foreground">
