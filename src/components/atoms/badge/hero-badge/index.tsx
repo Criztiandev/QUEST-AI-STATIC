@@ -5,13 +5,18 @@ interface Props extends BadgeProps {}
 
 const HeroBadge = ({ children, ...props }: Props) => {
   return (
-    <Badge
-      {...props}
-      variant="outline"
-      className={cn("px-4 py-2 rounded-full", props.className)}
-    >
-      {children}
-    </Badge>
+    <div className="p-[1px] bg-gradient-to-r from-[#03F6F8]/40 via-secondary/30 to-[#03F6F8]/40 rounded-full inline-block">
+      <Badge
+        {...props}
+        variant="outline"
+        className={cn(
+          "px-4 py-2 rounded-full border-none  bg-primary-foreground",
+          props.className
+        )}
+      >
+        {children}
+      </Badge>
+    </div>
   );
 };
 

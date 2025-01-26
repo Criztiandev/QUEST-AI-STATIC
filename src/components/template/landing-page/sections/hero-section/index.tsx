@@ -7,17 +7,17 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <Section className="min-h-[90vh] pt-[100px] ">
+    <Section className="pt-[100px]">
       {/* Banner */}
-      <div className="flex flex-col gap-[48px] items-center justify-between mb-10">
-        <HeroBadge className="text-primary bg-primary-foreground space-x-4">
-          <Badge className="rounded-full font-bold text-xs px-4 py-2">
-            New
+      <div className="flex flex-col gap-[48px] items-center justify-between">
+        <HeroBadge className="text-primary space-x-4">
+          <Badge className="bg-primary rounded-full font-bold text-xs px-4 h-8">
+            <span className="text-black text-xl">New</span>
           </Badge>
-          <span className="text-center text-sm">
-            New QuestX bot for your X community
+          <span className="text-center text-lg">
+            QuestX bot for your X community
           </span>
-          <ArrowRight size={24} />
+          <ArrowRight size={18} />
         </HeroBadge>
 
         <div className="flex flex-col gap-8  justify-center items-center">
@@ -34,18 +34,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <PrimaryButton className="text-xl">Get Started</PrimaryButton>
-      </div>
-
-      <div className="w-full h-[600px] rounded-lg p-4 flex">
-        <iframe
-          className="w-full h-full rounded-lg"
-          src="https://www.youtube.com/embed/Uc-apOIYbFM?si=O3iMK8yXOtBPjYQk"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+        <PrimaryButton className="text-xl">Get started</PrimaryButton>
       </div>
     </Section>
   );

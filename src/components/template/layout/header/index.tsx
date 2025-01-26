@@ -1,16 +1,17 @@
+import PrimarySingleLogo from "@/components/atoms/logo/primary-single-logo";
 import { useMenuBar } from "@/context/layout/menu-bar-context";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import { Link } from "react-router";
 
 const Header = () => {
   const isMobile = useIsMobile();
   const { isMenuOpen, toggleMenu } = useMenuBar();
   return (
-    <div>
+    <div className="border-b border-muted-foreground/52">
       <header className="p-4">
         <nav className="flex justify-between items-center">
-          <div>Logo</div>
+          <PrimarySingleLogo />
 
           {!isMobile && (
             <ul className="flex items-center gap-12 text-xl">
@@ -37,7 +38,11 @@ const Header = () => {
           )}
 
           <button onClick={toggleMenu}>
-            <MenuIcon color="white" size={28} />
+            {isMenuOpen ? (
+              <X color="white" size={28} />
+            ) : (
+              <MenuIcon color="white" size={28} />
+            )}
           </button>
         </nav>
       </header>

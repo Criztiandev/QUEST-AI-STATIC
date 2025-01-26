@@ -6,15 +6,11 @@ interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 const FadeCard = ({ children, className, ...props }: Props) => {
   return (
-    <Card
-      className={cn(
-        "border border-primary bg-gradient-to-b from-primary/100 to-primary/10",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </Card>
+    <div className="p-[1px] bg-gradient-to-b from-[#03F6F8]/10  rounded-xl">
+      <Card className={cn("border-none", className)} {...props}>
+        {children}
+      </Card>
+    </div>
   );
 };
 

@@ -7,7 +7,13 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 export const GradientText: React.FC<Props> = ({ text, ...props }) => {
-  const colors = ["rgb(131, 179, 32)", "rgb(249, 129, 47)"];
+  const colors = [
+    "hsl(192, 98%, 49%)",
+    "hsl(234 69% 57%)",
+    "hsl(192, 98%, 49%)",
+    "hsl(192, 98%, 49%)",
+    "hsl(192, 98%, 49%)",
+  ];
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
@@ -29,7 +35,7 @@ export const GradientText: React.FC<Props> = ({ text, ...props }) => {
         repeat: Infinity,
       }}
       style={{
-        backgroundImage: `linear-gradient(45deg, ${colors[0]}, ${colors[1]}, ${colors[0]})`,
+        backgroundImage: `linear-gradient(45deg, ${colors[0]} 40%, ${colors[1]} 60%, ${colors[0]})`,
         backgroundSize: "200% auto",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",

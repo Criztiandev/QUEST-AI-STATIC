@@ -1,16 +1,18 @@
 import PrimaryButton from "@/components/atoms/button/primary-button";
 import Section from "@/components/template/layout/section";
-import { Badge } from "@/components/ui/badge";
 import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AboutData, AboutDataProps } from "./data";
 import FadeCard from "@/components/atoms/card/fade-card";
+import HeroBadge from "@/components/atoms/badge/hero-badge";
 const AboutSection = () => {
   return (
     <Section>
       {/* grid-cols-[55%_auto] */}
       <div className="grid grid-cols-1 gap-16 ">
         <div className="flex flex-col gap-8 items-start">
-          <Badge>QuestAI</Badge>
+          <HeroBadge>
+            <div>QuestAI</div>
+          </HeroBadge>
 
           <div className="flex flex-col gap-6 ">
             <h2 className="text-6xl font-bold">QuestBot</h2>
@@ -23,19 +25,21 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <PrimaryButton>Get Started</PrimaryButton>
+          <PrimaryButton>Get started</PrimaryButton>
         </div>
         <div className="grid grid-cols-1 gap-4">
           {AboutData.map((items: AboutDataProps) => (
             <FadeCard key={items.id}>
-              <CardHeader>
+              <CardHeader className="">
                 {items.icon}
-                <CardTitle className="text-2xl font-semibold ">
+                <CardTitle className="text-2xl font-semibold">
                   {items.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="">
-                <p className="text-lg">{items.description}</p>
+                <p className="text-lg text-muted-foreground">
+                  {items.description}
+                </p>
               </CardContent>
             </FadeCard>
           ))}

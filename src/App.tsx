@@ -16,6 +16,7 @@ const App = () => {
       <Header />
       <main className="space-y-[100px]">
         <HeroSection />
+        <VideoSection />
         <AboutSection />
         <SponsorSection />
         <FeatureSection />
