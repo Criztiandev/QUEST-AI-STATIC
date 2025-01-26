@@ -17,7 +17,16 @@ const App = () => {
       <main className="space-y-[100px]">
         <HeroSection />
         <VideoSection />
-        <AboutSection />
+        <div className="relative">
+          <AboutSection />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-50 w-full">
+            <img
+              src="/images/background/hero-beam.png"
+              alt="about-bg"
+              className="w-full object-cover"
+            />
+          </div>
+        </div>
         <SponsorSection />
         <FeatureSection />
         <VideoSection />

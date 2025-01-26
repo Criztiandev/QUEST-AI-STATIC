@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return (
     <Section className="pt-[100px]">
-      <div className="absolute border inset-0 -z-20">
+      <div className="absolute inset-0 -z-20">
         <img
           src="/images/background/hero-background.png"
           alt="hero-bg"
@@ -16,10 +16,10 @@ const HeroSection = () => {
         />
       </div>
       {/* Banner */}
-      <div className="flex flex-col gap-[48px] items-center justify-between">
+      <div className="flex flex-col gap-[48px] items-center justify-between max-w-[800px] mx-auto">
         <HeroBadge className="text-primary space-x-4">
           <Badge className="bg-primary rounded-full font-bold text-xs px-4 h-8">
-            <span className="text-black text-xl">New</span>
+            <span className="text-black text-base">New</span>
           </Badge>
           <span className="text-center text-lg">
             QuestX bot for your X community
@@ -27,15 +27,16 @@ const HeroSection = () => {
           <ArrowRight size={18} />
         </HeroBadge>
 
-        <div className="flex flex-col gap-8  justify-center items-center">
-          <h1 className="text-6xl font-bold text-center break-words w-[355px]">
+        <div className="flex flex-col gap-8 justify-center items-center w-full">
+          <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold break-words flex gap-4 flex-wrap text-center justify-center">
             Revolutionizing
-            <div>
-              <GradientText className="text-6xl" text="Giveaways" />
-            </div>
-            <div>for Your Community</div>
+            <GradientText
+              className="text-5xl md:text-4xl lg:text-6xl"
+              text="Giveaways"
+            />
+            for Your Community
           </h1>
-          <p className="text-xl text-center ">
+          <p className="text-base md:text-lg lg:text-xl text-center max-w-[600px]">
             Effortlessly host, automate, manage, and monitor quiz-based
             giveaways in your community.
           </p>

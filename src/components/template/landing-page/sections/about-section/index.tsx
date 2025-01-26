@@ -7,15 +7,7 @@ import HeroBadge from "@/components/atoms/badge/hero-badge";
 const AboutSection = () => {
   return (
     <Section className="relative pt-[64px]" id="about">
-      <div className="absolute top-0 left-0 -z-99">
-        <img
-          src="/images/background/hero-beam.png"
-          alt="about-bg"
-          className="w-full object-cover"
-        />
-      </div>
-      {/* grid-cols-[55%_auto] */}
-      <div className="grid grid-cols-1 gap-16 ">
+      <div className="grid grid-cols-1 xl:grid-cols-[55%_auto] gap-16 ">
         <div className="flex flex-col gap-8 items-start">
           <HeroBadge>
             <div>QuestAI</div>
@@ -34,7 +26,7 @@ const AboutSection = () => {
 
           <PrimaryButton>Get started</PrimaryButton>
         </div>
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
           {AboutData.map((items: AboutDataProps) => (
             <FadeCard key={items.id}>
               <CardHeader className="">

@@ -2,8 +2,8 @@ import PrimarySingleLogo from "@/components/atoms/logo/primary-single-logo";
 import { useMenuBar } from "@/context/layout/menu-bar-context";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { MenuIcon, X } from "lucide-react";
-import { Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
+import SpecialButton from "@/components/atoms/button/special-button";
 
 const Header = () => {
   const isMobile = useIsMobile();
@@ -91,13 +91,17 @@ const Header = () => {
             </ul>
           )}
 
-          <motion.button onClick={toggleMenu} whileTap={{ scale: 0.95 }}>
-            {isMenuOpen ? (
-              <X color="white" size={28} />
-            ) : (
-              <MenuIcon color="white" size={28} />
-            )}
-          </motion.button>
+          {isMobile ? (
+            <motion.button onClick={toggleMenu} whileTap={{ scale: 0.95 }}>
+              {isMenuOpen ? (
+                <X color="white" size={28} />
+              ) : (
+                <MenuIcon color="white" size={28} />
+              )}
+            </motion.button>
+          ) : (
+            <SpecialButton>Get Started</SpecialButton>
+          )}
         </nav>
       </header>
 
