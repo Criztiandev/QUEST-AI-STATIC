@@ -26,7 +26,7 @@ const AboutSection = () => {
 
           <PrimaryButton>Get started</PrimaryButton>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4">
           {AboutData.map((items: AboutDataProps) => (
             <FadeCard key={items.id}>
               <CardHeader className="">

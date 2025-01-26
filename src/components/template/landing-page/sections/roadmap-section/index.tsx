@@ -17,7 +17,7 @@ const RoadMapSection = () => {
           id: quarter.id,
           title: quarter.title,
           content: (
-            <RoadMapCard className="xl:min-w-[500px]">
+            <RoadMapCard className="xl:w-[500px]">
               <CardContent className="space-y-2 flex flex-col p-4">
                 {quarter.items.map((item) => (
                   <span key={item.id} className="text-white font-medium">
