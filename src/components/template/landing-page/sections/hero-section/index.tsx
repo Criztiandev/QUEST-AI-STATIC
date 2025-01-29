@@ -28,13 +28,14 @@ const HeroSection = () => {
         </HeroBadge>
 
         <div className="flex flex-col gap-8 justify-center items-center w-full">
-          <h1 className="text-5xl md:text-4xl lg:text-6xl font-bold break-words flex gap-4 flex-wrap text-center justify-center">
+          <h1 className=" font-borela font-bold text-6xl md:text-4xl lg:text-6xl  break-all flex gap-4 flex-wrap text-center justify-center">
             Revolutionizing
             <GradientText
-              className="text-5xl md:text-4xl lg:text-6xl"
+              className="text-6xl md:text-4xl lg:text-6xl"
               text="Giveaways"
             />
-            for Your Community
+            for Your
+            <span>Community</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-center max-w-[600px]">
             Effortlessly host, automate, manage, and monitor quiz-based

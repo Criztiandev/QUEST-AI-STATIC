@@ -1,13 +1,13 @@
+import { useState } from "react";
 import PrimarySingleLogo from "@/components/atoms/logo/primary-single-logo";
-import { useMenuBar } from "@/context/layout/menu-bar-context";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { MenuIcon, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import SpecialButton from "@/components/atoms/button/special-button";
 
 const Header = () => {
-  const isMobile = useIsMobile();
-  const { isMenuOpen, toggleMenu } = useMenuBar();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const menuVariants = {
     initial: { opacity: 0, height: 0 },
@@ -51,16 +51,6 @@ const Header = () => {
     },
   };
 
-  const handleNavigation = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      if (isMobile) {
-        toggleMenu();
-      }
-    }
-  };
-
   const navItems = [
     { label: "Features", id: "feature" },
     { label: "Roadmap", id: "roadmap" },
@@ -75,25 +65,17 @@ const Header = () => {
         <nav className="flex justify-between items-center">
           <PrimarySingleLogo />
 
-          {!isMobile && (
-            <ul className="flex items-center gap-12 text-xl">
-              {navItems.map(({ label, id }) => (
-                <li key={label}>
-                  <a
-                    href={`#${id}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavigation(id);
-                    }}
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+          {/* Desktop Navigation */}
+          <ul className="hidden lg:flex items-center gap-12 text-xl">
+            {navItems.map(({ label, id }) => (
+              <li key={label}>
+                <a href={`#${id}`}>{label}</a>
+              </li>
+            ))}
+          </ul>
 
-          {isMobile ? (
+          {/* Mobile Menu Button / Desktop CTA */}
+          <div className="block lg:hidden">
             <motion.button onClick={toggleMenu} whileTap={{ scale: 0.95 }}>
               {isMenuOpen ? (
                 <X color="white" size={28} />
@@ -101,20 +83,23 @@ const Header = () => {
                 <MenuIcon color="white" size={28} />
               )}
             </motion.button>
-          ) : (
+          </div>
+
+          <div className="hidden lg:block">
             <SpecialButton>Get Started</SpecialButton>
-          )}
+          </div>
         </nav>
       </header>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
-        {isMobile && isMenuOpen && (
+        {isMenuOpen && (
           <motion.div
             variants={menuVariants}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed top-[73px] left-0 right-0 bg-background z-50 overflow-hidden"
+            className="md:hidden fixed top-[73px] left-0 right-0 bg-background z-50 overflow-hidden"
           >
             <motion.ul
               variants={listVariants}
@@ -128,14 +113,7 @@ const Header = () => {
                   variants={itemVariants}
                   className="w-full py-2"
                 >
-                  <a
-                    href={`#${id}`}
-                    className="text-lg"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavigation(id);
-                    }}
-                  >
+                  <a href={`#${id}`} className="text-lg">
                     {label}
                   </a>
                 </motion.li>
