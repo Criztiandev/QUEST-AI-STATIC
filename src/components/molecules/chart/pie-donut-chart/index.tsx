@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { PieChart, Pie, ResponsiveContainer, Cell } from "recharts";
 import useIsMobile from "@/hooks/use-is-mobile";
-import { CHART_DATA, ChartData } from "./data/chart.data";
+import { CHART_DATA } from "./data/chart.data";
 import PieChartActiveShape from "./helpers/pie-chart-active-shape";
 import PieChartLabel from "./helpers/pie-chart-label";
 
