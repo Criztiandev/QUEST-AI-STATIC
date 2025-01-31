@@ -16,12 +16,12 @@ const TokenomicsSection = () => {
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">
         <div className="flex flex-col items-center justify-center p-4 gap-2 xl:flex-row">
-          <h3 className="text-6xl font-bold font-bolera tracking-wide">
+          <h3 className="text-5xl lg:text-6xl font-bold font-bolera lg:tracking-wide">
             Total Supply:
           </h3>
           <GradientText
             text="10,000,000"
-            className="text-6xl font-bold font-bolera"
+            className="text-5xl lg:text-6xl font-bold font-bolera"
           />
         </div>
         <p className="text-xl max-w-2xl text-center text-muted-foreground">

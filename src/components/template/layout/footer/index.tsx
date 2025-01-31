@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="px-6 mb-16 xl:px-16 max-w-[1800px] mx-auto mt-24">
       <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-16">
           <PrimaryLongLogoWhite />
           <p className="text-muted-foreground text-center max-w-[300px]">
             Lorem ipsum dolor sit amet consectetur adipiscing elit.

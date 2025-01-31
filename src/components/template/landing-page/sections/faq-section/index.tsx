@@ -121,7 +121,7 @@ const FaqSection = () => {
           <div className="mb-8">
             <HeroBadge>FAQs</HeroBadge>
           </div>
-          <h3 className="text-5xl lg:text-6xl  max-w-2xl font-bolera tracking-wide">
+          <h3 className="text-5xl lg:text-6xl  max-w-2xl font-bolera lg:tracking-wide">
             Need to know more about QuestAI?
           </h3>
         </div>
@@ -130,7 +130,7 @@ const FaqSection = () => {
             {FAQData.map((item) => (
               <AccordionItem key={item.id} value={`item-${item.id}`}>
                 <AccordionTrigger className="hover:no-underline">
-                  <span className="text-base lg:text-lg font-medium">
+                  <span className="text-lg lg:text-xl font-medium">
                     {item.title}
                   </span>
                 </AccordionTrigger>
