@@ -26,12 +26,12 @@ const BannerSection = () => {
             <img
               src="/images/logo/quest-ai-solo-blue-logo.svg"
               alt="banner"
-              className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] object-contain"
+              className="w-[300px] h-[300px] xl:w-[400px] xl:h-[400px] object-contain mix-blend-soft-light"
             />
           </div>
 
           <div className="space-y-8 flex justify-center items-center flex-col text-center max-w-xl">
-            <h3 className="text-5xl font-bold flex flex-col gap-2">
+            <h3 className="text-5xl lg:text-6xl flex flex-col gap-2">
               <span className="text-white">Your Giveaway,</span>
               <span className="text-white">Our Questions</span>
             </h3>
@@ -40,7 +40,7 @@ const BannerSection = () => {
               the ease of hosting giveaways!
             </p>
 
-            <PrimaryButton className="bg-white hover:bg-primary">
+            <PrimaryButton className="bg-white hover:bg-primary z-50 relative">
               Get Started
             </PrimaryButton>
           </div>

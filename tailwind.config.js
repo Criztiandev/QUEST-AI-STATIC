@@ -8,6 +8,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        bolera: ["Borela", "san-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

@@ -42,9 +42,7 @@ export const GradientText: React.FC<Props> = ({ text, ...props }) => {
         backgroundClip: "text",
       }}
     >
-      <span
-        className={cn("font-sans tracking-tight font-bold", props.className)}
-      >
+      <span className={cn(" tracking tracking-wide", props.className)}>
         {text}
       </span>
     </motion.div>

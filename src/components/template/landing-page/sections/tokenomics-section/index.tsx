@@ -10,12 +10,19 @@ const TokenomicsSection = () => {
       className="flex justify-center items-center flex-col overflow-hidden"
       id="tokenomics"
     >
-      <HeroBadge className="">Tokenomics</HeroBadge>
+      <div className="mb-8">
+        <HeroBadge className="">Tokenomics</HeroBadge>
+      </div>
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">
         <div className="flex flex-col items-center justify-center p-4 gap-2 xl:flex-row">
-          <h3 className="text-5xl font-bold">Total Supply:</h3>
-          <GradientText text="10,000,000" className="text-5xl font-bold" />
+          <h3 className="text-6xl font-bold font-bolera tracking-wide">
+            Total Supply:
+          </h3>
+          <GradientText
+            text="10,000,000"
+            className="text-6xl font-bold font-bolera"
+          />
         </div>
         <p className="text-xl max-w-2xl text-center text-muted-foreground">
           QuestAI's tokenomics structure is strategically allocated to drive
@@ -23,7 +30,7 @@ const TokenomicsSection = () => {
         </p>
       </div>
 
-      <div className="flex justify-center items-center flex-col gap-4 mb-8">
+      <div className="flex justify-center items-center flex-col gap-4 mb-12">
         <PieDonutChart />
       </div>
 

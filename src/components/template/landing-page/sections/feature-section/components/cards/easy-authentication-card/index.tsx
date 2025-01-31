@@ -3,7 +3,7 @@ import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const EasyAuthenticationCard = () => {
   return (
-    <FeatureCard className="relative w-full h-[300px] xl:h-full xl:h-[600px]  xl:max-w-[450px] mb-4 md:h-full">
+    <FeatureCard className="relative w-full h-[300px] xl:h-[600px]  xl:max-w-[450px] mb-4 md:h-full">
       <div className="flex flex-col justify-center items-center">
         <div className="w-full h-full relative flex justify-center items-center">
           <img
@@ -21,7 +21,7 @@ const EasyAuthenticationCard = () => {
         </div>
         <div className="absolute bottom-0 left-0">
           <CardHeader className="p-0">
-            <CardTitle className="text-xl font-bold px-6 py-2">
+            <CardTitle className="text-xl px-6 py-2 font-poppins font-medium">
               Easy Authentication
             </CardTitle>
           </CardHeader>

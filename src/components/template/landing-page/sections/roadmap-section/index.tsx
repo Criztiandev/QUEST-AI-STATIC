@@ -10,7 +10,9 @@ const RoadMapSection = () => {
     <Section className="" id="roadmap">
       <div className="flex flex-col items-center justify-center space-y-8">
         <HeroBadge>Timeline</HeroBadge>
-        <h3 className="text-6xl font-bold text-center">QuestAI Roadmap</h3>
+        <h3 className="text-5xl lg:text-6xl font-bolera text-center tracking-wide">
+          QuestAI Roadmap
+        </h3>
       </div>
       <Timeline
         data={timelineData.map((quarter) => ({
@@ -20,7 +22,10 @@ const RoadMapSection = () => {
             <RoadMapCard className="xl:w-[500px]">
               <CardContent className="space-y-2 flex flex-col p-4">
                 {quarter.items.map((item) => (
-                  <span key={item.id} className="text-white font-medium">
+                  <span
+                    key={item.id}
+                    className="text-muted-foreground text-base lg:text-lg "
+                  >
                     {item.text}
                   </span>
                 ))}

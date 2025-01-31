@@ -9,13 +9,13 @@ const TrackParticipationCard = () => {
           <img
             src="/images/background/feature-track-participation.svg"
             alt="feature-1"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="w-full h-full flex flex-col justify-end items-center">
           <div>
             <CardHeader className="p-0">
-              <CardTitle className="text-xl font-bold px-6 py-2">
+              <CardTitle className="text-xl font-medium px-6 py-2">
                 Track Participation
               </CardTitle>
             </CardHeader>

@@ -10,7 +10,7 @@ const HeroBadge = ({ children, ...props }: Props) => {
         {...props}
         variant="outline"
         className={cn(
-          "px-4 py-2 rounded-full border-none  bg-primary-foreground",
+          "px-4 py-2 rounded-full border-none bg-background",
           props.className
         )}
       >

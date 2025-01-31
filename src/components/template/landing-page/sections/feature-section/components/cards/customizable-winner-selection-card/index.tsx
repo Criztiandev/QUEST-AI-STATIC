@@ -14,7 +14,7 @@ const CustomizableWinnerSelectionCard = () => {
         </div>
         <div className="">
           <CardHeader className="p-0">
-            <CardTitle className="text-xl font-bold px-6 py-2">
+            <CardTitle className="text-xl font-medium px-6 py-2">
               Customizable Winner Selection
             </CardTitle>
           </CardHeader>

@@ -14,8 +14,8 @@ const AboutSection = () => {
           </HeroBadge>
 
           <div className="flex flex-col gap-6 ">
-            <h2 className="text-6xl font-bold">QuestBot</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="text-6xl font-bolera">QuestBot</h2>
+            <p className="text-lg text-muted-foreground  max-w-[700px]">
               A powerful Telegram bot designed to make running quizzes and
               giveaways in your community effortless. With just a few clicks,
               you can set up an automated giveaway, eliminating the need for
@@ -31,9 +31,7 @@ const AboutSection = () => {
             <FadeCard key={items.id}>
               <CardHeader className="">
                 {items.icon}
-                <CardTitle className="text-2xl font-semibold">
-                  {items.title}
-                </CardTitle>
+                <CardTitle className="text-2xl">{items.title}</CardTitle>
               </CardHeader>
               <CardContent className="">
                 <p className="text-lg text-muted-foreground">

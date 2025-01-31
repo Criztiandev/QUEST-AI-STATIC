@@ -15,7 +15,7 @@ const InstantWinnerNotificationCard = () => {
 
         <div className="w-full">
           <CardHeader className="p-0">
-            <CardTitle className="text-xl font-bold px-6 py-2">
+            <CardTitle className="text-xl font-medium px-6 py-2">
               Instant Winner Notification
             </CardTitle>
           </CardHeader>
