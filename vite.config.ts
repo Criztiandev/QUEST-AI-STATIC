@@ -9,5 +9,20 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  assetsInclude: ["**/*.ttf", "**/*.woff", "**/*.woff2"],
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+      },
+      output: {
+        assetFileNames: (assetInfo: any) => {
+          let extType = assetInfo.name.split(".")[1];
+          if (/ttf|otf|eot|woff|woff2/i.test(extType)) {
+            extType = "fonts";
+          }
+          return `assets/${extType}/[name]-[hash][extname]`;
+        },
+      },
+    },
+  },
 });
