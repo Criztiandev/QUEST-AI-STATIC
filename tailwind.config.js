@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bolera: ["Borela", "san-serif"],
+        bolera: ["Borela", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
       animation: {

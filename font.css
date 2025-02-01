@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Borela";
-  src: url("./src/assets/fonts/BORELA.ttf") format("ttf");
+  src: url("/fonts/BORELA.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
