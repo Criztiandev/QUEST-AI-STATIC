@@ -61,7 +61,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: "q4",
-    title: "Q5",
+    title: "Q4",
     items: [
       { id: "q4-item1", text: "Bot Development v3" },
       { id: "q4-item2", text: "Multilingual support launch" },

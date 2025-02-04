@@ -31,7 +31,7 @@ const HeroSection = () => {
           <h1 className=" font-bolera font-bold text-6xl md:text-4xl lg:text-6xl  break-all flex gap-4 flex-wrap text-center justify-center tracking-wide">
             Revolutionizing
             <GradientText
-              className="text-5xl md:text-4xl lg:text-6xl"
+              className="md:text-4xl lg:text-6xl"
               text="Giveaways"
             />
             for Your

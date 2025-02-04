@@ -26,13 +26,14 @@ export const GradientText: React.FC<Props> = ({ text, ...props }) => {
   return (
     <motion.div
       key={count}
-      className="inline-block relative"
+      className="inline-flex relative"
       initial={{ backgroundPosition: "0% 50%" }}
       animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
       transition={{
         duration: 5,
         ease: "linear",
         repeat: Infinity,
+        repeatType: "loop",
       }}
       style={{
         backgroundImage: `linear-gradient(45deg, ${colors[0]} 40%, ${colors[1]} 60%, ${colors[0]})`,
@@ -42,9 +43,7 @@ export const GradientText: React.FC<Props> = ({ text, ...props }) => {
         backgroundClip: "text",
       }}
     >
-      <span className={cn(" tracking tracking-wide", props.className)}>
-        {text}
-      </span>
+      <span className={cn("tracking-wide", props.className)}>{text}</span>
     </motion.div>
   );
 };
